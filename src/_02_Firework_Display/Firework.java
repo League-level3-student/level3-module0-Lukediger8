@@ -14,23 +14,29 @@ public class Firework{
     public static final int GRAVITY = 1;
 
     // 1. Create an array of Spark objects called sparks. Don't initialize it.
-
+    	Spark [] j;
     public boolean dead = false;
 
     public Firework() {
         // 2. Initialize the Spark array to contain 100 Sparks. 
-
+    		 j = new Spark[100];
 
         // 3. Iterate through the sparks and initialize each one to a new Spark.
         //    Make each spark start at the middle bottom of the screen.
-
+    		 for(int i = 0; i<j.length;i++) {
+    			 j[i] = new Spark(500,500);
+    		 }
     }
 
     public void launch() {
         // 4. Iterate through the sparks and reset their x and y location
         //    to their original starting point.
-
-    }
+    	 for(int i = 0; i<j.length;i++) {
+			 j[i].x=0;
+			 j[i].y=0;
+		 }
+}
+    
 
     public void updateSparks() {
         // 8. Uncomment this code. See if you can understand what it is doing.
