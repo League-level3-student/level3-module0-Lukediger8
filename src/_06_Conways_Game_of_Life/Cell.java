@@ -36,7 +36,7 @@ public class Cell implements Drawable{
      * (source: Wikipedia) 
      */
     public void liveOrDie(int numNeighbors) {
-
+    	
     }
 
     public int getX() {
