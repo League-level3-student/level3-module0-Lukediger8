@@ -53,7 +53,23 @@ public class TheWrongWayCow {
     public static int[] findWrongWayCow(final char[][] field) {
         // Fill in the code to return the [col, row] coordinate position of the
         // head (letter 'c') of the wrong way cow!
-        
+    	int forward = 0;
+    	int backward = 0;
+    	int up = 0;
+    	int down = 0;
+    	
+    	
+for(int i = 0; i < field.length; i++) {
+	for(int j = 0; j < field[i].length - 2;i++) {
+		if(field[i][j] == 'c') {
+			if(field[i][j + 1]=='o') {
+				if(field[i][j + 2] == 'w') {
+					forward++;
+				}
+			}
+		}
+	}
+}
         return null;
     }
 }
